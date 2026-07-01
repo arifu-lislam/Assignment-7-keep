@@ -24,11 +24,11 @@ const Footer = () => {
       <div>
         <hr className="w-9/12 mx-auto  border-t border-gray-200 bg-gray-50 pt-[-.5] mt-12" />
       </div>
-      <div className="flex justify-between w-9/12 mx-auto text-white pt-10 pb-6">
+      <div className="flex flex-col md:flex-row justify-between w-9/12 mx-auto text-white pt-10 pb-6">
         <div>
           <p>© 2026 KeenKeeper. All rights reserved.</p>
         </div>
-        <div className="flex gap-4 ">
+        <div className="flex  gap-4 ">
           <p>Privacy Policy</p>
           <p>Terms of Service</p>
           <p>Cookies</p>

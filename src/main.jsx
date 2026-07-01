@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router/dom";
 import { router } from "./routers/Routers";
+import ConnectivityContext from "./context/ConnectivityContext";
 // import { createBrowserRouter } from "react-router";
 
 // import RootLayout from "./layout/RootLayout";
@@ -13,6 +14,8 @@ import { router } from "./routers/Routers";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <ConnectivityContext>
+      <RouterProvider router={router}></RouterProvider>
+    </ConnectivityContext>
   </StrictMode>,
 );

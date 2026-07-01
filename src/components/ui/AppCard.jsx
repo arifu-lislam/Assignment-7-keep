@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const AppCard = ({ friend }) => {
   const bgColors = {
@@ -7,7 +8,10 @@ const AppCard = ({ friend }) => {
     overdue: "bg-red-500 text-white",
   };
   return (
-    <div className="bg-base-100 shadow-sm text-center p-10 space-y-2 rounded-xl h-full">
+    <Link
+      to={`/friendsDetails/${friend.id}`}
+      className="bg-base-100 shadow-sm text-center p-10 space-y-2 rounded-xl h-full"
+    >
       <img
         className=" h-[100px] w-[100px] rounded-full mx-auto"
         src={friend.picture}
@@ -32,7 +36,7 @@ const AppCard = ({ friend }) => {
       >
         {friend.status}
       </p>
-    </div>
+    </Link>
   );
 };
 
