@@ -15,6 +15,7 @@ const Timeline = () => {
   };
   return (
     <div className="bg-[#F8FAFC] pt-10 min-h-screen ">
+      <h2 className="text-4xl font-bold w-9/12 mx-auto mb-10">Timeline</h2>
       {communication.map((singleData, index) => {
         return (
           <div key={index}>
