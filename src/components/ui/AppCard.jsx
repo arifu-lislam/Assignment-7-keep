@@ -10,7 +10,7 @@ const AppCard = ({ friend }) => {
   return (
     <Link
       to={`/friendsDetails/${friend.id}`}
-      className="bg-base-100 shadow-sm text-center p-10 space-y-2 rounded-xl h-full"
+      className="bg-base-100 shadow-sm text-center p-10 space-y-2 rounded-xl h-full w-full"
     >
       <img
         className=" h-[100px] w-[100px] rounded-full mx-auto"

@@ -18,7 +18,7 @@ const Friends = () => {
           <MoonLoader color="#244D3F" />
         </div>
       ) : (
-        <div className="w-9/12 mx-auto grid grid-cols-4 gap-4 ">
+        <div className="w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 md:px-0 ">
           {friends.map((friend) => {
             return <AppCard key={friend.id} friend={friend}></AppCard>;
           })}

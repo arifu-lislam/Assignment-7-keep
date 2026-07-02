@@ -18,20 +18,20 @@ const Banner = () => {
         </button>
       </div>
 
-      <div className="w-9/12 mx-auto grid grid-cols-4 gap-2 mt-10 pb-20">
-        <div className="bg-white w-[200px] text-center py-7 rounded-xl">
+      <div className="w-full md:w-9/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 mt-10 pb-20 px-4 md:px-0">
+        <div className="bg-white w-full text-center py-7 rounded-xl">
           <h2 className="text-[#244D3F] font-bold text-3xl">10</h2>
           <p className="text-[#64748B]">Total Friends</p>
         </div>
-        <div className="bg-white w-[200px] text-center py-7 rounded-xl">
+        <div className="bg-white w-full text-center py-7 rounded-xl">
           <h2 className="text-[#244D3F] font-bold text-3xl">3</h2>
           <p className="text-[#64748B]">On Track</p>
         </div>
-        <div className="bg-white w-[200px] text-center py-7 rounded-xl">
+        <div className="bg-white w-full text-center py-7 rounded-xl">
           <h2 className="text-[#244D3F] font-bold text-3xl">6</h2>
           <p className="text-[#64748B]">Need Attention</p>
         </div>
-        <div className="bg-white w-[200px] text-center py-7 rounded-xl">
+        <div className="bg-white w-full text-center py-7 rounded-xl">
           <h2 className="text-[#244D3F] font-bold text-3xl">12</h2>
           <p className="text-[#64748B]">Interaction This Month</p>
         </div>

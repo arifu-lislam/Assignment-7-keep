@@ -6,6 +6,8 @@ import { MdOutlineTextsms } from "react-icons/md";
 import { IoVideocamOutline } from "react-icons/io5";
 import { FriendContext } from "../../context/CreateContext";
 import { toast } from "react-toastify";
+import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
+import { LuArchive } from "react-icons/lu";
 // import { FriendContext } from "../../context/CreateContext";
 
 const DetailsPages = () => {
@@ -71,9 +73,15 @@ const DetailsPages = () => {
             <h2>{expectedFriend.email}</h2>
           </div>
           <div className="flex flex-col w-full lg:w-[300px] gap-4 mt-4">
-            <button className="btn">Snooze 2 weeks</button>
-            <button className="btn">Archive</button>
-            <button className="btn">Delete</button>
+            <button className="btn text-[15px]">
+              <RiNotificationSnoozeLine className="text-xl" /> Snooze 2 weeks
+            </button>
+            <button className="btn text-[15px]">
+              <LuArchive className="text-xl" /> Archive
+            </button>
+            <button className="btn text-[15px] text-red-500">
+              <RiDeleteBinLine className="text-xl text-red-500" /> Delete
+            </button>
           </div>
         </div>
         <div className="right-side ">
